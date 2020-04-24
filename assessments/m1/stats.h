@@ -9,19 +9,106 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h 
+ * @brief A simple application that performs statistical analytics on a dataset.
  *
- * <Add Extended Description Here>
+ * A couple of functions that can analyze an array of unsigned char data items
+ * and report analytics on the maximum, minimum, mean, and median of the data set.
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Mohamed Ashraf
+ * @date 24/4/2020
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
 /* Add Your Declarations and Function Comments here */ 
+
+/**
+ * @brief A function that prints the statistics of an array
+ *
+ * including minimum, maximum, mean, and median.
+ *
+ * It takes No parameters
+ *
+ * It return nothing
+ */
+void print_statistics();
+
+/**
+ * @brief prints the array to the screen
+ *
+ *  Given an array of data and a length, prints the array to the screen
+ *
+ * @param arr_name   Name of the array
+ * @param len        Length of the array
+ *
+ */
+void print_array(int *arr_name, int len);
+
+/**
+ * @brief returns the median value
+ *
+ * Given an array of data and a length, returns the median value
+ *
+ * @param arr_name   Name of the array
+ * @param len        Length of the array
+ *
+ * @return The median value of elements of the array
+ */
+int find_median(int* arr_name, int len);
+
+
+/**
+ * @brief the mean
+ *
+ *  Given an array of data and a length, returns the mean
+ *
+ * @param arr_name   Name of the array
+ * @param len        Length of the array
+ *
+ * @return the mean value of elements in the array
+ */
+int find_mean(int *arr_name, int len);
+
+/**
+ * @brief the maximum
+ *
+ *  Given an array of data and a length, returns the maximum
+ *
+ * @param arr_name   Name of the array
+ * @param len        Length of the array
+ *
+ * @return the maximum value of elements in the array
+ */
+int find_maximum(int *arr_name, int len);
+
+/**
+ * @brief the minimum
+ *
+ *  Given an array of data and a length, returns the minimum
+ *
+ * @param arr_name   Name of the array
+ * @param len        Length of the array
+ *
+ * @return the minimum value of elements in the array
+ */
+int find_minimum(int *arr_name, int len);
+
+/**
+ * @brief sorts the array
+ *
+ *  Given an array of data and a length, sorts the array from largest to
+ *  smallest. (The zeroth Element should be the largest value, and the
+ *  last element (n-1) should be the smallest value. )
+ *
+ * @param arr_name   Name of the array
+ * @param len        Length of the array
+ *
+ * @return the sorted array
+ */
+int *sort_array(int *arr_name, int len);
+
 
 /**
  * @brief <Add Brief Description of Function Here>
