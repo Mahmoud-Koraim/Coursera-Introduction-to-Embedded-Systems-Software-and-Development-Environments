@@ -29,11 +29,11 @@
  *
  * including minimum, maximum, mean, and median.
  *
- * It takes No parameters
+ * @param arr_name   Nameof the array 
  *
  * It return nothing
  */
-void print_statistics();
+void print_statistics(unsigned char *arr_name);
 
 /**
  * @brief prints the array to the screen
@@ -44,7 +44,7 @@ void print_statistics();
  * @param len        Length of the array
  *
  */
-void print_array(int *arr_name, int len);
+void print_array(unsigned char *arr_name, int len);
 
 /**
  * @brief returns the median value
@@ -56,20 +56,23 @@ void print_array(int *arr_name, int len);
  *
  * @return The median value of elements of the array
  */
-int find_median(int* arr_name, int len);
+unsigned char find_median(unsigned char *arr_name, int len);
 
 
 /**
- * @brief the mean
+ * @brief Given an array of data and a length, returns the mean
  *
- *  Given an array of data and a length, returns the mean
+ *  The "median" is the "middle" value in the list of numbers.
+ *  To find the median,
+ *  your numbers have to be listed in numerical order from smallest to largest,
+ *  so you may have to rewrite your list before you can find the median.
  *
  * @param arr_name   Name of the array
  * @param len        Length of the array
  *
  * @return the mean value of elements in the array
  */
-int find_mean(int *arr_name, int len);
+float find_mean(unsigned char *arr_name, int len);
 
 /**
  * @brief the maximum
@@ -81,7 +84,7 @@ int find_mean(int *arr_name, int len);
  *
  * @return the maximum value of elements in the array
  */
-int find_maximum(int *arr_name, int len);
+unsigned char find_maximum(unsigned char *arr_name, int len);
 
 /**
  * @brief the minimum
@@ -93,7 +96,7 @@ int find_maximum(int *arr_name, int len);
  *
  * @return the minimum value of elements in the array
  */
-int find_minimum(int *arr_name, int len);
+unsigned char find_minimum(unsigned char *arr_name, int len);
 
 /**
  * @brief sorts the array
@@ -107,7 +110,7 @@ int find_minimum(int *arr_name, int len);
  *
  * @return the sorted array
  */
-int *sort_array(int *arr_name, int len);
+unsigned char *sort_array(unsigned char *arr_name, int len);
 
 
 /**
